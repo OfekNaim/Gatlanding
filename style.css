@@ -184,11 +184,10 @@ img { max-width: 100%; display: block; }
 .hero__gallery {
   margin-top: 14px;
   position: relative;
-  height: 300px;
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--border);
-  background: #ffffff;
+  aspect-ratio: 11 / 6;
 }
 
 .slide {
@@ -205,7 +204,7 @@ img { max-width: 100%; display: block; }
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -273,19 +272,16 @@ img { max-width: 100%; display: block; }
 .events-image {
   width: 100%;
   max-height: 360px;
-  object-fit: contain;
   border-radius: 12px;
   border: 1px solid var(--border);
   margin-top: 14px;
-  background: #ffffff;
 }
 
 .menu-image {
   width: 100%;
+  height: auto;
   border-radius: 12px;
   border: 1px solid var(--border);
-  object-fit: contain;
-  background: #ffffff;
 }
 
 .pill {
@@ -482,7 +478,6 @@ img { max-width: 100%; display: block; }
     gap: 12px;
   }
   .hero { grid-template-columns: 1.1fr 0.9fr; padding: 56px 40px 68px; }
-  .hero__gallery { height: 380px; }
   .section { padding: 40px 40px; }
   .footer { flex-direction: row; justify-content: space-between; align-items: center; }
 }
