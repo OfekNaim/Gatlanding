@@ -37,4 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  const whatsappForm = document.getElementById('whatsapp-form');
+  const whatsappStatus = document.getElementById('whatsapp-status');
+  if (whatsappForm) {
+    whatsappForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const data = new FormData(whatsappForm);
+      const name = String(data.get('name') || '').trim();
+      const phone = String(data.get('phone') || '').trim();
+      const message = String(data.get('message') || '').trim();
+
+      const text = encodeURIComponent(`שם: ${name}\nטלפון: ${phone}\nהודעה: ${message}`);
+      const url = `https://wa.me/972501234567?text=${text}`;
+      if (whatsappStatus) whatsappStatus.textContent = 'פותחים WhatsApp...';
+      window.open(url, '_blank', 'noopener');
+    });
+  }
 });
