@@ -22,7 +22,11 @@
 <body>
   <header class="topbar">
     <a class="logo" href="#hero" aria-label="OH MY GAT">
-      <img src="images/logo-oh-my-gat.png" alt="לוגו OH MY GAT">
+      <picture>
+        <source type="image/avif" srcset="images/logo-oh-my-gat-320w.avif 320w, images/logo-oh-my-gat-640w.avif 640w" sizes="160px">
+        <source type="image/webp" srcset="images/logo-oh-my-gat-320w.webp 320w, images/logo-oh-my-gat-640w.webp 640w" sizes="160px">
+        <img src="images/logo-oh-my-gat.png" width="320" height="175" alt="לוגו OH MY GAT" decoding="async">
+      </picture>
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="פתיחת תפריט">
       ☰
@@ -60,13 +64,25 @@
         </div>
         <div class="hero__gallery">
           <figure class="slide active">
-            <img src="images/hero-green.png" alt="בקבוק מיץ גת ירוק" loading="lazy">
+            <picture>
+              <source type="image/avif" srcset="images/hero-green-640w.avif 640w, images/hero-green-1024w.avif 1024w, images/hero-green-1600w.avif 1600w" sizes="(min-width: 768px) 42vw, 92vw">
+              <source type="image/webp" srcset="images/hero-green-640w.webp 640w, images/hero-green-1024w.webp 1024w, images/hero-green-1600w.webp 1600w" sizes="(min-width: 768px) 42vw, 92vw">
+              <img src="images/hero-green.png" width="1024" height="558" alt="בקבוק מיץ גת ירוק" loading="eager" fetchpriority="high" decoding="async">
+            </picture>
           </figure>
           <figure class="slide">
-            <img src="images/hero-red.png" alt="בקבוק מיץ גת אדום" loading="lazy">
+            <picture>
+              <source type="image/avif" srcset="images/hero-red-640w.avif 640w, images/hero-red-1024w.avif 1024w, images/hero-red-1600w.avif 1600w" sizes="(min-width: 768px) 42vw, 92vw">
+              <source type="image/webp" srcset="images/hero-red-640w.webp 640w, images/hero-red-1024w.webp 1024w, images/hero-red-1600w.webp 1600w" sizes="(min-width: 768px) 42vw, 92vw">
+              <img src="images/hero-red.png" width="1024" height="558" alt="בקבוק מיץ גת אדום" loading="lazy" decoding="async">
+            </picture>
           </figure>
           <figure class="slide">
-            <img src="images/hero-showcase.png" alt="תצוגת מוצרים על הדלפק" loading="lazy">
+            <picture>
+              <source type="image/avif" srcset="images/hero-showcase-640w.avif 640w, images/hero-showcase-1024w.avif 1024w, images/hero-showcase-1600w.avif 1600w" sizes="(min-width: 768px) 42vw, 92vw">
+              <source type="image/webp" srcset="images/hero-showcase-640w.webp 640w, images/hero-showcase-1024w.webp 1024w, images/hero-showcase-1600w.webp 1600w" sizes="(min-width: 768px) 42vw, 92vw">
+              <img src="images/hero-showcase.png" width="1024" height="558" alt="תצוגת מוצרים על הדלפק" loading="lazy" decoding="async">
+            </picture>
           </figure>
         </div>
       </div>
@@ -109,7 +125,11 @@
             <p class="desc">500 מ״ל</p>
           </div>
           <div class="price">₪50</div>
-          <img class="menu-image" src="images/product-single-500ml.png" alt="בקבוק OH MY GAT יחיד" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="images/product-single-500ml-480w.avif 480w, images/product-single-500ml-768w.avif 768w, images/product-single-500ml-1024w.avif 1024w" sizes="(min-width: 768px) 340px, 92vw">
+            <source type="image/webp" srcset="images/product-single-500ml-480w.webp 480w, images/product-single-500ml-768w.webp 768w, images/product-single-500ml-1024w.webp 1024w" sizes="(min-width: 768px) 340px, 92vw">
+            <img class="menu-image" src="images/product-single-500ml.png" width="1024" height="558" alt="בקבוק OH MY GAT יחיד" loading="lazy" decoding="async">
+          </picture>
           <a class="cta tiny" href="https://wa.me/972501234567?text=שלום%2C+אני+רוצה+בקבוק+יחיד+OH+MY+GAT" target="_blank" rel="noopener">להזמין</a>
         </article>
         <article class="card card--menu">
@@ -119,7 +139,11 @@
             <p class="desc">6×500 מ״ל</p>
           </div>
           <div class="price">₪300</div>
-          <img class="menu-image" src="images/product-six-pack.png" alt="שישיית OH MY GAT" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="images/product-six-pack-480w.avif 480w, images/product-six-pack-768w.avif 768w, images/product-six-pack-1024w.avif 1024w" sizes="(min-width: 768px) 340px, 92vw">
+            <source type="image/webp" srcset="images/product-six-pack-480w.webp 480w, images/product-six-pack-768w.webp 768w, images/product-six-pack-1024w.webp 1024w" sizes="(min-width: 768px) 340px, 92vw">
+            <img class="menu-image" src="images/product-six-pack.png" width="1024" height="558" alt="שישיית OH MY GAT" loading="lazy" decoding="async">
+          </picture>
           <a class="cta tiny" href="https://wa.me/972501234567?text=שלום%2C+אני+רוצה+שישייה+OH+MY+GAT" target="_blank" rel="noopener">להזמין</a>
         </article>
       </div>
@@ -138,7 +162,11 @@
             <p class="desc">12×500 מ״ל • מגיעים עד לאולם האירועים</p>
           </div>
           <div class="price">₪600</div>
-          <img class="menu-image" src="images/event-wedding-package.png" alt="חבילת חתן-כלה OH MY GAT" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="images/event-wedding-package-480w.avif 480w, images/event-wedding-package-768w.avif 768w, images/event-wedding-package-1200w.avif 1200w" sizes="(min-width: 768px) 360px, 92vw">
+            <source type="image/webp" srcset="images/event-wedding-package-480w.webp 480w, images/event-wedding-package-768w.webp 768w, images/event-wedding-package-1200w.webp 1200w" sizes="(min-width: 768px) 360px, 92vw">
+            <img class="menu-image" src="images/event-wedding-package.png" width="1200" height="628" alt="חבילת חתן-כלה OH MY GAT" loading="lazy" decoding="async">
+          </picture>
           <a class="cta tiny" href="https://wa.me/972501234567?text=שלום%2C+אני+רוצה+חבילת+חתן+כלה+OH+MY+GAT" target="_blank" rel="noopener">להזמין</a>
         </article>
         <article class="card card--menu">
@@ -148,11 +176,19 @@
             <p class="desc">הנחה מיוחדת + כוסות הגשה • מגיעים עד לאולם האירועים</p>
           </div>
           <div class="price">דברו איתנו</div>
-          <img class="menu-image" src="images/event-bulk-orders.jpg" alt="הזמנת גת בכמות גדולה (אירועים)">
+          <picture>
+            <source type="image/avif" srcset="images/event-bulk-orders-480w.avif 480w, images/event-bulk-orders-768w.avif 768w, images/event-bulk-orders-1024w.avif 1024w" sizes="(min-width: 768px) 360px, 92vw">
+            <source type="image/webp" srcset="images/event-bulk-orders-480w.webp 480w, images/event-bulk-orders-768w.webp 768w, images/event-bulk-orders-1024w.webp 1024w" sizes="(min-width: 768px) 360px, 92vw">
+            <img class="menu-image" src="images/event-bulk-orders.jpg" width="1024" height="559" alt="הזמנת גת בכמות גדולה (אירועים)" loading="lazy" decoding="async">
+          </picture>
           <a class="cta tiny" href="https://wa.me/972501234567?text=שלום%2C+אני+מעוניין+במבצע+מעל+10+ליטר+OH+MY+GAT" target="_blank" rel="noopener">לתיאום מחיר</a>
         </article>
       </div>
-      <img class="events-image" src="images/event-wedding-banner.png" alt="חבילת גת לאירוע חתונה" loading="lazy">
+      <picture>
+        <source type="image/avif" srcset="images/event-wedding-banner-480w.avif 480w, images/event-wedding-banner-768w.avif 768w, images/event-wedding-banner-1200w.avif 1200w" sizes="(min-width: 768px) 900px, 92vw">
+        <source type="image/webp" srcset="images/event-wedding-banner-480w.webp 480w, images/event-wedding-banner-768w.webp 768w, images/event-wedding-banner-1200w.webp 1200w" sizes="(min-width: 768px) 900px, 92vw">
+        <img class="events-image" src="images/event-wedding-banner.png" width="1200" height="628" alt="חבילת גת לאירוע חתונה" loading="lazy" decoding="async">
+      </picture>
       <p class="muted-note">רוצים לצרף תמונות חתונה? שלחו לנו ונוסיף לגלריה.</p>
     </section>
 
